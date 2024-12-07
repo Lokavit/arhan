@@ -1,4 +1,4 @@
-import config from "./config";
+import config from "../config";
 
 /**
  * @function 格式化时分秒
@@ -8,7 +8,7 @@ import config from "./config";
  * @example
  * fmtCurrency(`13579.00`);
  */
-export const fmtToHMS = (timestamp, timezone = config.timezone) => {
+export const fmtHMS = (timestamp, timezone = config.timezone) => {
   const date = new Date(timestamp);
   const options = {
     hour: "2-digit",

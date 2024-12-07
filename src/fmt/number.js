@@ -1,4 +1,4 @@
-import config from "./config";
+import config from "../config";
 import lgre from "../lgre";
 /**
  * @function 按照lgre格式化百分数
@@ -9,7 +9,7 @@ import lgre from "../lgre";
  * @example
  * fmt.percent(1.35);
  */
-export const percent = (val, locale = config.lgre) => {
+export const fmtPercent = (val, locale = config.lgre) => {
   const fmt = new Intl.NumberFormat(locale, {
     style: "percent",
     minimumFractionDigits: 0,
@@ -47,7 +47,7 @@ export const fmtNumber = (str, decimal = -1) => {
  * fmt.crypto(`13579.1111`);
  * fmt.crypto(fmtNumber(`13579.111111`, 5));
  */
-export const crypto = (str, locale = config.lgre) => {
+export const fmtCrypto = (str, locale = config.lgre) => {
   // console.log(`fmtCrypto:`, str)
   // 合法值
   str = !str || isNaN(str) ? 0 : str;
@@ -84,7 +84,7 @@ export const crypto = (str, locale = config.lgre) => {
  * fmt.currency(`13579.1111`);
  * fmt.currency(fmtNumber(`13579.111111`, 5));
  */
-export const amount = (str, locale = config.lgre) => {
+export const fmtAmount = (str, locale = config.lgre) => {
   // console.log(`fmtCurrency:`, str)
   // 转为字符串
   str = typeof str == "string" ? str : str.toString();
@@ -125,7 +125,7 @@ export const amount = (str, locale = config.lgre) => {
  * fmtQTY(`13579.00`);
  * fmtQTY(`13579`);
  */
-export const quantity = (num, locale = config.lgre) => {
+export const fmtQuantity = (num, locale = config.lgre) => {
   //   num = !num || isNaN(num) ? 0 : Number(num);
   return new Intl.NumberFormat(locale, {
     style: "decimal", // 用于普通数字

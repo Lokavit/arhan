@@ -1,4 +1,4 @@
-import config from "./config";
+import config from "../config";
 
 // 标题或重要标签 每个单词首字母大写 （Title Case）
 export const TITLE_CASE = "title";

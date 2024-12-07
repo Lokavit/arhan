@@ -1,6 +1,19 @@
-import config from "./config";
-import { text } from "./text";
-import { hms } from "./date";
-import { percent, fmtNumber, crypto, amount, quantity } from "./number";
+import { fmtText } from "./text";
+import { fmtHMS } from "./date";
+import {
+  fmtPercent,
+  fmtNumber,
+  fmtCrypto,
+  fmtAmount,
+  fmtQuantity,
+} from "./number";
 
-const fmt = {};
+export const fmt = {
+  fmtText,
+  fmtHMS,
+  fmtPercent,
+  fmtNumber,
+  fmtCrypto,
+  fmtAmount,
+  fmtQuantity,
+};
