@@ -8,7 +8,7 @@ import config from "../config";
  * @example
  * fmtCurrency(`13579.00`);
  */
-export const fmtHMS = (timestamp, timezone = config.timezone) => {
+export const hms = (timestamp, timezone = config.timezone) => {
   const date = new Date(timestamp);
   const options = {
     hour: "2-digit",

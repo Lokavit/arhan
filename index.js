@@ -1,21 +1,16 @@
 import config from "./src/config";
 import lgre from "./src/lgre";
-import { fmtText } from "./src/fmt/text";
-import { fmtHMS } from "./src/fmt/date";
-import {
-  fmtPercent,
-  fmtNumber,
-  fmtCrypto,
-  fmtAmount,
-  fmtQuantity,
-} from "./src/fmt/number";
+import fmt from "./src/fmt";
 
 export { config };
 export { lgre };
-export { fmtText };
-export { fmtHMS };
-export { fmtPercent };
-export { fmtNumber };
-export { fmtCrypto };
-export { fmtAmount };
-export { fmtQuantity };
+export { fmt };
+
+/**
+ * @function value is odd?
+ * @param {number} val
+ * @return {boolean}
+ * @example
+ * isOdd(3);
+ */
+export const isOdd = (val) => (val & 1) === 0;

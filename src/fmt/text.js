@@ -14,7 +14,7 @@ export const SENTENCE_CASE = "sentence";
  * @example
  * fmtText( `hello`);
  */
-export const fmtText = (val, method = TITLE_CASE) => {
+export const text = (val, method = TITLE_CASE) => {
   // 是否为西文
   const isWestern = !config.ignore.includes(config.lgre);
   // console.log(`是否西文:`, isWestern);
