@@ -91,7 +91,7 @@ export const amount = (str, locale = config.lgre) => {
   // 获取整数和小数部分
   const [intPart, decimalPart = ""] = str.split(".");
   // 当前货币
-  const curCurrency = lgre[locale].currency;
+  const curCurrency = lgre[locale].currency || "USD";
   // console.log(`fmtCurrency curCurrency:`, curCurrency);
   // 小数位数最小值。传入值小数部分的长度&& 小数*1是否＞0
   //   const min = decimalPart.length > 0 && decimalPart * 1 > 0 ? 0 : 2;

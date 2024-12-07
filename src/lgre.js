@@ -1,152 +1,121 @@
-export const enUS = {
-    code: "en-US", // 美
+export default {
+  "en-US": {
+    code: "en-US",
     lang: "English",
     timeZone: "America/New_York",
     flag: "us",
     currency: "USD",
-  };
-  
-  export const deDE = {
-    code: "de-DE", // 简中
+  },
+  "de-DE": {
+    code: "de-DE",
     lang: "Deutsch",
     timeZone: "Europe/Berlin",
     flag: "de",
     currency: "EUR",
-  };
-  
-  export const zhCN = {
-    code: "zh-CN", // 简中
+  },
+  "zh-CN": {
+    code: "zh-CN",
     lang: "中文简体",
     timeZone: "Asia/Shanghai",
     flag: "cn",
     currency: "CNY",
-  };
-  
-  export const zhTW = {
-    code: "zh-TW", // 繁中
+  },
+  "zh-TW": {
+    code: "zh-TW",
     lang: "台湾繁体",
     timeZone: "Asia/Taipei",
     flag: "tw",
     currency: "TWD",
-  };
-  
-  export const frFR = {
-    code: "fr-FR", // 法
+  },
+  "fr-FR": {
+    code: "fr-FR",
     lang: "Français",
     timeZone: "Europe/Paris",
     flag: "fr",
     currency: "EUR",
-  };
-  
-  export const itIT = {
-    code: "it-IT", // 意大利
+  },
+  "it-IT": {
+    code: "it-IT",
     lang: "Italiano",
     timeZone: "Europe/Rome",
     flag: "it",
     currency: "EUR",
-  };
-  
-  export const jaJP = {
-    code: "ja-JP", // 日
+  },
+  "ja-JP": {
+    code: "ja-JP",
     lang: "日本語",
     timeZone: "Asia/Tokyo",
     flag: "jp",
     currency: "JPY",
-  };
-  
-  export const thTH = {
-    code: "th-TH", // 泰
+  },
+  "th-TH": {
+    code: "th-TH",
     lang: "ไทย",
     timezone: "Asia/Bangkok",
     flag: "th",
     currency: "THB",
-  };
-  
-  export const ptPT = {
-    code: "pt-PT", // 葡萄牙
+  },
+  "pt-PT": {
+    code: "pt-PT",
     lang: "Português",
     timeZone: "Europe/Lisbon",
     flag: "pt",
     currency: "EUR",
-  };
-  
-  export const esES = {
-    code: "es-ES", // 西班牙
+  },
+  "es-ES": {
+    code: "es-ES",
     lang: "Español",
     timeZone: "Europe/Madrid",
     flag: "es",
     currency: "EUR",
-  };
-  
-  export const koKR = {
-    code: "ko-KR", // 韩
+  },
+  "ko-KR": {
+    code: "ko-KR",
     lang: "한국의",
     timeZone: "Asia/Seoul",
     flag: "kr",
     currency: "KRW",
-  };
-  
-  export const trTR = {
-    code: "tr-TR", // 土耳其
+  },
+  "tr-TR": {
+    code: "tr-TR",
     lang: "Türkçe",
     timeZone: "Europe/Istanbul",
     flag: "tr",
     currency: "TRY",
-  };
-  
-  export const arIL = {
-    code: "ar-IL", // 阿拉伯语（以色列)
+  },
+  "ar-IL": {
+    code: "ar-IL",
     lang: "العربية",
     timezone: "Asia/Jerusalem",
     flag: "il",
     currency: "SAR",
-  };
-  
-  export const viVN = {
-    code: "vi-VN", // 越南语
+  },
+  "vi-VN": {
+    code: "vi-VN",
     lang: "tiếng việt",
     timeZone: "Asia/Ho_Chi_Minh",
     flag: "vn",
     currency: "VND",
-  };
-  
-  export const ruRU = {
-    code: "ru-RU", // 俄
+  },
+  "ru-RU": {
+    code: "ru-RU",
     lang: "Русский",
     timeZone: "Europe/Moscow",
     flag: "ru",
     currency: "RUB",
-  };
-  
-  export const enGB = {
-    code: "en-GB", // 英国
-    lang: "English（United Kingdom)",
+  },
+  "en-GB": {
+    code: "en-GB",
+    lang: "English(United Kingdom)",
     timeZone: "Europe/London",
     flag: "gb",
     currency: "",
-  };
-  
-  export const enAU = {
-    code: "en-AU", // 澳大利亚
-    lang: "English（Australia)",
+  },
+  "en-AU": {
+    code: "en-AU",
+    lang: "English(Australia)",
     timeZone: "Australia/Sydney",
     flag: "au",
     currency: "",
-  };
-  
-  export const bnIN = {
-    code: "bn-IN", // 孟加拉语（印度)
-    lang: "বাংলা",
-    timeZone: "Asia/Dhaka",
-    flag: "bn",
-    currency: "",
-  };
-  
-  export const hiIN = {
-    code: "hi-IN", // 印度语
-    lang: "हिंदी",
-    timeZone: "Asia/Kolkata",
-    flag: "hi",
-    currency: "",
-  };
-  
+  },
+};
